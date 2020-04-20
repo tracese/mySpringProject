@@ -1,0 +1,5 @@
+大纲
+一、Spring框架的概述以及Spring中基于XML的IOC配置
+二、Spring中基于注解的IOC和IOC的案例
+三、Spring中的AOP和基于XML以及注解的AOP配置
+四、Spring中的JdbcTemplate以及Spring事务控制
