@@ -3,3 +3,21 @@
 二、Spring中基于注解的IOC和IOC的案例
 三、Spring中的AOP和基于XML以及注解的AOP配置
 四、Spring中的JdbcTemplate以及Spring事务控制
+
+-----------------------------------------------------
+Spring的概述
+    Spring是什么？
+    Spring的两大核心IOC和AOP
+    Spring的优势
+        1、方便解耦、简化开发
+        2、AOP编程的支持
+        3、方便程序的测试
+        4、声明式事务的支持
+        5、方便集成各种优秀的框架
+        6、降低JavaEE API的使用难度
+    Spring的体系结构
+程序的耦合和解耦
+    工厂模式解耦
+IOC的概念和Spring中的IOC容器
+    Spring基于XML的IOC容器的搭建
+依赖注入（Dependency Injection）
