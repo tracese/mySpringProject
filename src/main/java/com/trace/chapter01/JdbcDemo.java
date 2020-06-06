@@ -2,7 +2,8 @@ package com.trace.chapter01;
 
 import java.sql.*;
 
-/*耦合：程序间的依赖关系
+/**
+耦合：程序间的依赖关系
 * 包括：
 *   1、类之间的依赖关系
 *   2、方法之间的依赖关系
@@ -16,7 +17,7 @@ import java.sql.*;
 public class JdbcDemo {
     public static void main(String[] args) throws SQLException, ClassNotFoundException {
         //1、注册驱动(如果没有导入依赖的驱动，程序在编译期就会出错，->程序耦合问题)
-//        DriverManager.registerDriver(new com.mysql.jdbc.Driver());
+        //DriverManager.registerDriver(new com.mysql.jdbc.Driver()); 依赖于具体的驱动类 vs 依赖于一个字符串
         Class.forName("com.mysql.jdbc.Driver");
         //2、获取连接
         Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/eesy?useUnicode=true&characterEncoding=utf-8&useSSL=false","root","123456");

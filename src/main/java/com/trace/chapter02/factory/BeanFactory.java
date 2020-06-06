@@ -6,7 +6,7 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.Properties;
 
-/*
+/**
 * 一个创建Bean对象的工厂
 * Bean：在计算机英语中，有可重用组件的含义
 * JavaBean:用Java语言编写的可重用组件
@@ -23,9 +23,13 @@ import java.util.Properties;
 *   在工厂初始化时即创建对象，并保存在容器中，单例对象存在线程安全问题，尽量不要在类中定义成员变量，定义在方法中
 * */
 public class BeanFactory {
-    //定义一个Properties对象
+    /**
+     * 定义一个Properties对象
+     */
     private static Properties properties;
-    //定义一个Map，用于存放我们要创建的对象，我们把它称之为容器
+    /**
+     * 定义一个Map，用于存放我们要创建的对象，我们把它称之为容器
+     */
     private static Map<String,Object> beans;
     //使用静态代码块为Properties赋值
     static {
